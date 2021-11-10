@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008E9BAC273B969C006CC343 /* fix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 008E9B95273B969B006CC343 /* fix.cpp */; };
+		008E9BAD273B969C006CC343 /* ElfReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 008E9B9E273B969B006CC343 /* ElfReader.cpp */; };
+		008E9BAE273B969C006CC343 /* ElfRebuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 008E9BA1273B969B006CC343 /* ElfRebuilder.cpp */; };
+		008E9BB0273B969C006CC343 /* kmods.mm in Sources */ = {isa = PBXBuildFile; fileRef = 008E9BAA273B969C006CC343 /* kmods.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		008E9B77273B9653006CC343 /* UE4Dumper-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UE4Dumper-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		008E9B93273B969A006CC343 /* Offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Offsets.h; sourceTree = "<group>"; };
+		008E9B95273B969B006CC343 /* fix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fix.cpp; sourceTree = "<group>"; };
+		008E9B96273B969B006CC343 /* elf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = elf.h; sourceTree = "<group>"; };
+		008E9B97273B969B006CC343 /* fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fix.h; sourceTree = "<group>"; };
+		008E9B98273B969B006CC343 /* kern_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kern_control.h; sourceTree = "<group>"; };
+		008E9B99273B969B006CC343 /* proc_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proc_info.h; sourceTree = "<group>"; };
+		008E9B9A273B969B006CC343 /* Process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Process.h; sourceTree = "<group>"; };
+		008E9B9C273B969B006CC343 /* exelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exelf.h; sourceTree = "<group>"; };
+		008E9B9D273B969B006CC343 /* elf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = elf.h; sourceTree = "<group>"; };
+		008E9B9E273B969B006CC343 /* ElfReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ElfReader.cpp; sourceTree = "<group>"; };
+		008E9B9F273B969B006CC343 /* ElfReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElfReader.h; sourceTree = "<group>"; };
+		008E9BA0273B969B006CC343 /* ElfRebuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElfRebuilder.h; sourceTree = "<group>"; };
+		008E9BA1273B969B006CC343 /* ElfRebuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ElfRebuilder.cpp; sourceTree = "<group>"; };
+		008E9BA2273B969B006CC343 /* FNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNames.h; sourceTree = "<group>"; };
+		008E9BA3273B969B006CC343 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		008E9BA5273B969B006CC343 /* StructsSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructsSDK.h; sourceTree = "<group>"; };
+		008E9BA6273B969B006CC343 /* Mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mem.h; sourceTree = "<group>"; };
+		008E9BA7273B969B006CC343 /* SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDK.h; sourceTree = "<group>"; };
+		008E9BA8273B969B006CC343 /* libproc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libproc.h; sourceTree = "<group>"; };
+		008E9BA9273B969B006CC343 /* GUObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUObjects.h; sourceTree = "<group>"; };
+		008E9BAA273B969C006CC343 /* kmods.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = kmods.mm; sourceTree = "<group>"; };
+		008E9BAB273B969C006CC343 /* kmods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kmods.h; sourceTree = "<group>"; };
+		008E9BB1273B9966006CC343 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		008E9B74273B9653006CC343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		008E9B6E273B9653006CC343 = {
+			isa = PBXGroup;
+			children = (
+				008E9B79273B9653006CC343 /* UE4Dumper-IOS */,
+				008E9B78273B9653006CC343 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		008E9B78273B9653006CC343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				008E9B77273B9653006CC343 /* UE4Dumper-IOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		008E9B79273B9653006CC343 /* UE4Dumper-IOS */ = {
+			isa = PBXGroup;
+			children = (
+				008E9B9B273B969B006CC343 /* ELF */,
+				008E9B94273B969B006CC343 /* ELF64 */,
+				008E9BA2273B969B006CC343 /* FNames.h */,
+				008E9BA9273B969B006CC343 /* GUObjects.h */,
+				008E9B98273B969B006CC343 /* kern_control.h */,
+				008E9BAB273B969C006CC343 /* kmods.h */,
+				008E9BAA273B969C006CC343 /* kmods.mm */,
+				008E9BA8273B969B006CC343 /* libproc.h */,
+				008E9BA6273B969B006CC343 /* Mem.h */,
+				008E9B93273B969A006CC343 /* Offsets.h */,
+				008E9B99273B969B006CC343 /* proc_info.h */,
+				008E9B9A273B969B006CC343 /* Process.h */,
+				008E9BA3273B969B006CC343 /* route.h */,
+				008E9BA7273B969B006CC343 /* SDK.h */,
+				008E9BA5273B969B006CC343 /* StructsSDK.h */,
+				008E9BB1273B9966006CC343 /* Info.plist */,
+			);
+			path = "UE4Dumper-IOS";
+			sourceTree = "<group>";
+		};
+		008E9B94273B969B006CC343 /* ELF64 */ = {
+			isa = PBXGroup;
+			children = (
+				008E9B95273B969B006CC343 /* fix.cpp */,
+				008E9B96273B969B006CC343 /* elf.h */,
+				008E9B97273B969B006CC343 /* fix.h */,
+			);
+			path = ELF64;
+			sourceTree = "<group>";
+		};
+		008E9B9B273B969B006CC343 /* ELF */ = {
+			isa = PBXGroup;
+			children = (
+				008E9B9C273B969B006CC343 /* exelf.h */,
+				008E9B9D273B969B006CC343 /* elf.h */,
+				008E9B9E273B969B006CC343 /* ElfReader.cpp */,
+				008E9B9F273B969B006CC343 /* ElfReader.h */,
+				008E9BA0273B969B006CC343 /* ElfRebuilder.h */,
+				008E9BA1273B969B006CC343 /* ElfRebuilder.cpp */,
+			);
+			path = ELF;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		008E9B76273B9653006CC343 /* UE4Dumper-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008E9B90273B9656006CC343 /* Build configuration list for PBXNativeTarget "UE4Dumper-IOS" */;
+			buildPhases = (
+				008E9B73273B9653006CC343 /* Sources */,
+				008E9B74273B9653006CC343 /* Frameworks */,
+				008E9B75273B9653006CC343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UE4Dumper-IOS";
+			productName = "UE4Dumper-IOS";
+			productReference = 008E9B77273B9653006CC343 /* UE4Dumper-IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		008E9B6F273B9653006CC343 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					008E9B76273B9653006CC343 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 008E9B72273B9653006CC343 /* Build configuration list for PBXProject "UE4Dumper-IOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 008E9B6E273B9653006CC343;
+			productRefGroup = 008E9B78273B9653006CC343 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				008E9B76273B9653006CC343 /* UE4Dumper-IOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		008E9B75273B9653006CC343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		008E9B73273B9653006CC343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008E9BAD273B969C006CC343 /* ElfReader.cpp in Sources */,
+				008E9BAC273B969C006CC343 /* fix.cpp in Sources */,
+				008E9BB0273B969C006CC343 /* kmods.mm in Sources */,
+				008E9BAE273B969C006CC343 /* ElfRebuilder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		008E9B8E273B9656006CC343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		008E9B8F273B9656006CC343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		008E9B91273B9656006CC343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YH94RW29QH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UE4Dumper-IOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xinja.UE4Dumper-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		008E9B92273B9656006CC343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YH94RW29QH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UE4Dumper-IOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xinja.UE4Dumper-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		008E9B72273B9653006CC343 /* Build configuration list for PBXProject "UE4Dumper-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008E9B8E273B9656006CC343 /* Debug */,
+				008E9B8F273B9656006CC343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		008E9B90273B9656006CC343 /* Build configuration list for PBXNativeTarget "UE4Dumper-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008E9B91273B9656006CC343 /* Debug */,
+				008E9B92273B9656006CC343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 008E9B6F273B9653006CC343 /* Project object */;
+}
