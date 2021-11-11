@@ -69,36 +69,12 @@ bool isASCII(const string &s) {
     });
 }
 
-bool isApexLegends() {
-    return isEqual(pkg, "com.ea.gp.apexlegendsmobilefps");
-}
 
-bool isFortnite() {
-    return isEqual(pkg, "com.epicgames.fortnite");
-}
 
 bool isARKSurvival() {
     return isEqual(pkg, "ShooterGame");
 }
 
-bool isGameOfPeace() {
-    return isEqual(pkg, "com.tencent.tmgp.pubgmhd");
-}
 
-bool isPUBGLite() {
-    return isEqual(pkg, "com.tencent.iglite");
-}
-
-bool isBGMIndia() {
-    return isEqual(pkg, "com.pubg.imobile");
-}
-
-bool isPUBGSeries() {
-    return isEqual(pkg, "com.tencent.ig") ||
-           isEqual(pkg, "com.tencent.igce") ||
-           isEqual(pkg, "com.pubg.krmobile") ||
-           isEqual(pkg, "com.vng.pubgmobile") ||
-           isEqual(pkg, "com.rekoo.pubgm") || isPUBGLite() || isBGMIndia();
-}
 
 #endif
