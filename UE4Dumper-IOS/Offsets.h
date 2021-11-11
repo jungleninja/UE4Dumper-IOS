@@ -156,12 +156,7 @@ namespace Offsets {
     }
 
     void patchCustom_32() {
-        if (isGameOfPeace()) {
-            //Class: FNameEntry
-            FNameEntryToNameString = 0xA;
-            //Class: FUObjectArray
-            FUObjectArrayToTUObjectArray = 0x8;
-        }
+
     }
 
     void initOffsets_64() {
@@ -241,94 +236,11 @@ namespace Offsets {
     }
 
     void patchCustom_64() {
-        if (isPUBGSeries()) {
-            if(!isPUBGLite()) {
-                //Class: FNameEntry
-                FNameEntryToNameString = 0xC;
-            }
-            //Class: ULevel
-            ULevelToAActors = 0xA0;
-            ULevelToAActorsCount = 0xA8;
-        }
-        if (isGameOfPeace()) {
-            //Class: FNameEntry
-            FNameEntryToNameString = 0xE;
-            //Class: FUObjectArray
-            FUObjectArrayToTUObjectArray = 0x8;
-            //Class: ULevel
-            ULevelToAActors = 0xA0;
-            ULevelToAActorsCount = 0xA8;
-        }
+
         if (isARKSurvival()) {
             //Class: UWorld
             UPropertyToOffsetInternal = 0x50;
             UWorldToPersistentLevel = 0x58;
-        }
-        if (isFortnite()) {
-            //Class: UStruct
-            UStructToSuperStruct = 0x40;
-            UStructToChildren = 0x48;
-            UStructToChildProperties = 0x50;
-            //Class: UProperty
-            UPropertyToElementSize = 0x38;
-            UPropertyToPropertyFlags = 0x40;
-            UPropertyToOffsetInternal = 0x4C;
-            //Class: UFunction
-            UFunctionToFunctionFlags = 0xB0;
-            UFunctionToFunc = 0xD8;
-            //Class: UBoolProperty
-            UBoolPropertyToFieldSize = 0x78;
-            UBoolPropertyToByteOffset = 0x79;
-            UBoolPropertyToByteMask = 0x7A;
-            UBoolPropertyToFieldMask = 0x7B;
-            //Class: UObjectProperty
-            UObjectPropertyToPropertyClass = 0x78;
-            //Class: UClassProperty
-            UClassPropertyToMetaClass = 0x80;
-            //Class: UInterfaceProperty
-            UInterfacePropertyToInterfaceClass = 0x80;
-            //Class: UArrayProperty
-            UArrayPropertyToInnerProperty = 0x78;
-            //Class: UMapProperty
-            UMapPropertyToKeyProp = 0x78;
-            UMapPropertyToValueProp = 0x80;
-            //Class: USetProperty
-            USetPropertyToElementProp = 0x78;
-            //Class: UStructProperty
-            UStructPropertyToStruct = 0x78;
-        }
-        if (isApexLegends()) {
-            //Class: UStruct
-            UStructToSuperStruct = 0x40;
-            UStructToChildren = 0x48;
-            UStructToChildProperties = 0x50;
-            //Class: UProperty
-            UPropertyToElementSize = 0x38;
-            UPropertyToPropertyFlags = 0x40;
-            UPropertyToOffsetInternal = 0x4C;
-            //Class: UFunction
-            UFunctionToFunctionFlags = 0xC0;
-            UFunctionToFunc = 0xE8;
-            //Class: UBoolProperty
-            UBoolPropertyToFieldSize = 0x78;
-            UBoolPropertyToByteOffset = 0x79;
-            UBoolPropertyToByteMask = 0x7A;
-            UBoolPropertyToFieldMask = 0x7B;
-            //Class: UObjectProperty
-            UObjectPropertyToPropertyClass = 0x78;
-            //Class: UClassProperty
-            UClassPropertyToMetaClass = 0x80;
-            //Class: UInterfaceProperty
-            UInterfacePropertyToInterfaceClass = 0x80;
-            //Class: UArrayProperty
-            UArrayPropertyToInnerProperty = 0x78;
-            //Class: UMapProperty
-            UMapPropertyToKeyProp = 0x78;
-            UMapPropertyToValueProp = 0x80;
-            //Class: USetProperty
-            USetPropertyToElementProp = 0x78;
-            //Class: UStructProperty
-            UStructPropertyToStruct = 0x78;
         }
     }
 }
